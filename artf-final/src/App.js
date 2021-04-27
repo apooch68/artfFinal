@@ -147,7 +147,8 @@ class Tile extends React.Component {
         cursor: 'pointer',
         overflow: 'hidden',
         width: '18vw',
-        height: '20vw'
+        height: '21vw',
+        marginTop: '0px'
       }}>
 
         <img
@@ -159,7 +160,9 @@ class Tile extends React.Component {
           style={{...imgStyle, ...tileStyle}}
         />
         <div style={{
-          marginTop: '0px'
+          marginTop: '-10px',
+          marginBottom: '0px',
+          fontSize: '13px'
         }}>
         <p>hi</p></div>
       </div>
