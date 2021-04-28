@@ -7,6 +7,10 @@ const questions = [
   {
     question: "What is Alison's favorite color?",
     answer: "purple"
+  },
+  {
+    question: "Who is Alison's favorite roommate?",
+    answer: "mimz"
   }
 ]
 
@@ -49,7 +53,7 @@ class ProfileContainer extends React.Component {
         <h3>{this.getQuestion()}</h3>
         </div> */}
         <div style={{
-          marginTop: '-60px',
+          marginTop: '-40px',
         display:'flex',
         alignContent:'center',
         justifyContent:'center'

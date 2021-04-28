@@ -72,13 +72,14 @@ class Posts extends React.Component {
     // Create tile for each item in data array
     // Pass data to each tile and assign a key
     return (
-      <div style={{
-        padding: '6vh 16vw',
-        display: 'flex',
-        flexWrap: 'wrap',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        position: 'relative'
+      <div 
+        style={{
+          padding: '6vh 16vw',
+          display: 'flex',
+          flexWrap: 'wrap',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          position: 'relative',
       }}>
         {this.props.data.map((data) => {
           return <Tile data={data} key={data.id} currentLevel={level} />
@@ -104,7 +105,6 @@ class Tile extends React.Component {
   _mouseEnter(e) {
     e.preventDefault();
     if (this.state.mouseOver === false) {
-      console.log(this.props.data.name);
       this.setState({
         mouseOver: true
       })
@@ -136,7 +136,6 @@ class Tile extends React.Component {
     // Modify styles based on state values
     let tileStyle = {};
     const hidden = this.props.currentLevel < level;
-    console.log(this.props.currentLevel, level)
     tileStyle = {
         width: '18vw',
         height: '18vw',
