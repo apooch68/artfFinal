@@ -23,7 +23,7 @@ class Caption extends React.Component {
     return (
       <div style={{
         fontSize: '13px',
-        marginTop: '-10px',
+        marginTop: '-8px',
         paddingLeft: '5px'
       }}>
       <div style={{
