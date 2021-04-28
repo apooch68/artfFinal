@@ -7,24 +7,24 @@ import 'react-chat-widget/lib/styles.css';
 
 const questions = [
   {
-    question: "Did you watch Secretariat?",
-    answer: "yes"
-  },
-  {
-    question: "What's his favorite TV show?",
+    question: "What's Bojack's favorite TV show?",
     answer: "horsin' around"
   },
   {
-    question: "What's his least favorite fruit?",
+    question: "What's Bojack's least favorite fruit?",
     answer: "honeydew"
+  },
+  {
+    question: "Who is Bojack's mother?",
+    answer: "beatrice"
+  },
+  {
+    question: "What's my favorite pastime?",
+    answer: "opioids"
   },
   {
     question: "What's my biggest fear?",
     answer: "being alone"
-  },
-  {
-    question: "What's my biggest regret?",
-    answer: "sarah lynn"
   },
 ]
 
@@ -39,8 +39,10 @@ class ProfileContainer extends React.Component {
   }
 
   onLevelUp = () => {
+    let isChatting = this.state.currentLevel >= questions.length;
     this.setState({
-      currentLevel: this.state.currentLevel + 1
+      currentLevel: this.state.currentLevel + 1,
+      isChatting
     });
   }
 
@@ -87,7 +89,7 @@ class ProfileContainer extends React.Component {
         <BasicTextFields disabled={finalLevel} question={this.getQuestion()} answer={this.getAnswer()} onCorrectAnswer={this.onLevelUp} /></div>
       <Posts level={this.state.currentLevel} data={data} />
       {this.state.isChatting && <Widget
-          profileAvatar={"https://pyxis.nymag.com/v1/imgs/7b1/f7e/d9537726a7ff3eb18f3221a5a7b17b3058-11-bojack.rsquare.w330.jpg"}
+          profileAvatar={"https://pbs.twimg.com/media/DjejAJyU8AIFvVz?format=jpg&name=small"}
           title="Message Bojack"
           subtitle="Ask him how he is!"
           handleNewUserMessage={this.handleNewUserMessage}
