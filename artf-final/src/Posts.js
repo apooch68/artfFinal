@@ -57,7 +57,7 @@ export const data = [{
   level: 4,
   likes: 7,
   caption: "it wasnt a one time thing. just went on a bender & don't remember anything since last tuesday",
-  image: "https://cdn.nybooks.com/wp-content/uploads/2020/07/thirlwell_1-082020.jpg"
+  image: "https://drive.google.com/file/d/1WJYHn58SBKEKlzefHCYBK__o2CD4CEyH/view?usp=sharing"
 }, {
   id: 9,
   name: "Sarah Lynn",
