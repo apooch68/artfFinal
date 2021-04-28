@@ -4,6 +4,7 @@ import reflection from './pictures/reflection.jpg';
 import todd from './pictures/todd.jpg';
 import bender from './pictures/bender.jpg';
 import sarahlynn from './pictures/sarahlynn.jpg';
+import ImageZoom from 'react-medium-image-zoom'
 
 export const data = [{
   id: 1,
@@ -153,6 +154,7 @@ class Tile extends React.Component {
       height: '18vw',
       transition: 'transform 500ms ease',
       overflow: 'hidden',
+      cursor: 'pointer'
     };
     if (mouseOver && !hidden) {
       imgStyle.transform = 'scale(1.1)';
@@ -165,24 +167,39 @@ class Tile extends React.Component {
       }
     }
   
-    var imageComponent = (<img
-      onMouseEnter={this._mouseEnter}
-      onMouseLeave={this._mouseLeave}
-      src={image}
-      alt={name}
-      style={{...imgStyle, ...tileStyle}}
-    />);
+    // var imageComponent = (<img
+    //   onMouseEnter={this._mouseEnter}
+    //   onMouseLeave={this._mouseLeave}
+    //   src={image}
+    //   alt={name}
+    //   style={{...imgStyle, ...tileStyle}}
+    // />);
+    var imageComponent = (
+      <ImageZoom
+        image={{
+          onMouseEnter: this._mouseEnter,
+          onMouseLeave: this._mouseLeave,
+          src: image,
+          alt: name,
+          style: { ...imgStyle, ...tileStyle }
+        }}
+        zoomImage={{
+          src: image,
+          alt: name,
+          style: {
+            cursor: 'pointer'
+          }
+        }}
+      />
+    )
     if (hidden) {
-      // imageComponent = (
-      //   <Blur
-      //     onMouseEnter={this._mouseEnter}
-      //     onMouseLeave={this._mouseLeave}
-      //     img={image}
-      //     alt={name}
-      //     blurRadius={5}
-      //     enableStyles={true}
-      //     style={{...imgStyle, ...tileStyle}}
-      //   />);
+      imageComponent = (<img
+        onMouseEnter={this._mouseEnter}
+        onMouseLeave={this._mouseLeave}
+        src={image}
+        alt={name}
+        style={{...imgStyle, ...tileStyle}}
+      />);
       }
   
     return (
