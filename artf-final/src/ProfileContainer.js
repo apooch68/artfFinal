@@ -9,6 +9,13 @@ class ProfileContainer extends React.Component {
       currentLevel: 1
     };
   }
+
+  onLevelUp = () => {
+    this.setState({
+      currentLevel: this.state.currentLevel + 1
+    });
+  }
+
   render() {
     return (
       <>

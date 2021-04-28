@@ -1,6 +1,5 @@
 import React from 'react';
 import Caption from './CaptionComponent';
-import Blur from 'react-blur';
 
 export const data = [{
   id: 1,
