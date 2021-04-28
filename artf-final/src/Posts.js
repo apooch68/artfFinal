@@ -1,5 +1,11 @@
 import React from 'react';
 import Caption from './CaptionComponent';
+import horsinaroundlevel1 from './pictures/horsinaroundlevel1.jpeg';
+import bojackanddianelevel2 from './pictures/bojackanddianelevel2.png';
+import Onetrickponylevel1 from './pictures/Onetrickponylevel1.png';
+import rockoperalevel2 from './pictures/rockoperalevel2.jpeg';
+import secretariatlevel1 from './pictures/secretariatlevel1.jpeg';
+
 import reflection from './pictures/reflection.jpg';
 import todd from './pictures/todd.jpg';
 import bender from './pictures/bender.jpg';
@@ -12,35 +18,35 @@ export const data = [{
   level: 1,
   caption: "feelin sexy today.... but could use a friend :/",
   name: "Island",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  image: horsinaroundlevel1
 }, {
   id: 2,
   name: "Forest",
   level: 2,
   likes: 288,
   caption: "could use a friend.... but feelin sexy 2day aha :P",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  image: bojackanddianelevel2
 }, {
   id: 3,
   name: "Whale",
   level: 1,
   likes: 1,
   caption: "feelin sexy today.... but could use a friend :/",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  image: Onetrickponylevel1
 }, {
   id: 4,
   name: "Mountain",
   level: 2,
   likes: 3,
   caption: "could use a friend.... but feelin sexy 2day aha :P",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  image: rockoperalevel2
 }, {
   id: 5,
   name: "Boat",
   level: 1,
   likes: 800,
   caption: "feelin sexy today.... but could use a friend :/",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  image: secretariatlevel1
 }, {
   id: 6,
   name: "Self reflection",
