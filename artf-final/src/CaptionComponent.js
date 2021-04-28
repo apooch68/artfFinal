@@ -2,7 +2,7 @@ import React from 'react';
 import Blur from 'react-blur'
 
 const likedHeartUrl = "https://www.nicepng.com/png/detail/778-7786050_download-instagram-like-icon-png.png";
-const likeHeartUrl = "https://lh3.googleusercontent.com/proxy/FGgkiGFBBT0mMJs3N6b_tr5nK2eDm8TR2DkOJWAYy3RLWO2uetZYGPr6Ckxa7Whcwli8GJhWt831lj9c5bpnsTlNnmrOa56FlHbPXba_qSvEAmXnGb-N5Ti3PnHBQxV2-7fB-6TAmfk";
+const likeHeartUrl = "https://www.pngkey.com/png/detail/85-850878_corazn-heart-tumblr-tatuaje-tattoo-heart-instagram-heart.png";
 
 class Caption extends React.Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class Caption extends React.Component {
     const { liked } = this.state;
     let captionStyle = {
       fontSize: '13px',
-      marginTop: '-8px',
+      marginTop: '-6px',
       paddingLeft: '5px'
     };
     let imageStyle = {
@@ -59,7 +59,7 @@ class Caption extends React.Component {
         <p>{liked ? likes + 1 : likes} likes</p>
       </div>
       <div style={{
-        marginTop: '-20px'
+        marginTop: '-23px'
       }}>
       <p><b>apooch68</b> {caption}</p></div>
       </div>
