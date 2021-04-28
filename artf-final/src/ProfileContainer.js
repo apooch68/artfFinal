@@ -73,9 +73,11 @@ class ProfileContainer extends React.Component {
 
   render() {
     const finalLevel = this.state.currentLevel == questions.length + 1;
-
+//https://payload.cargocollective.com/1/8/272451/4087297/Four-Circles-white_6.jpg
     return (
       <>
+      <HeaderComponent />
+      <hr />
       <Profile blurInfo={this.state.currentLevel == 1}></Profile>
         <div style={{
           marginTop: '-40px',
@@ -94,6 +96,27 @@ class ProfileContainer extends React.Component {
       </>
   );
   }
+}
+
+const HeaderComponent = () => {
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '20px',
+    }}><div><img src="https://payload.cargocollective.com/1/8/272451/4087297/Four-Circles-white_6.jpg" 
+    style={{
+      width: '90px'
+    }}/></div><div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignContent: 'center',
+      alignItems: 'center',
+      fontSize: '50px',
+      fontFamily: 'Courier New',
+      color: 'gray'
+    }}>Circles</div></div>
+  );
 }
 
 export default ProfileContainer;

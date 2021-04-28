@@ -12,8 +12,6 @@ import bender from './pictures/bender.jpg';
 import sarahlynn from './pictures/sarahlynn.jpg';
 import ImageZoom from 'react-medium-image-zoom'
 
-// TODO: apooch, alison
-
 export const data = [{
   id: 9,
   name: "Sarah Lynn",

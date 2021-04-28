@@ -74,7 +74,9 @@ const DescriptionBlurred = styled.div`
 export const Profile = ({blurInfo}) => {
     const DescriptionComponent = blurInfo ? DescriptionBlurred : Description;
     const LabelComponent = blurInfo ? LabelBlurred : Label;
-    return <UserGridStyled> 
+    return <UserGridStyled style={{
+        marginTop: '0px'
+    }}> 
             <Photo><ProfileImage/></Photo>
             <Name>Bojack Horseman</Name>
             <LabelComponent><strong>406.7k</strong> followers </LabelComponent>
