@@ -1,4 +1,5 @@
 import React from 'react';
+import Caption from './CaptionComponent'
 
 export const data = [{
   id: 1,
@@ -140,7 +141,8 @@ class Tile extends React.Component {
         margin: '15px',
         overflow: 'hidden',
         width: '18vw',
-        height: '21vw',
+        //height: '21vw',
+        height: '22vw',
         marginTop: '0px'
       }}>
 
@@ -153,11 +155,8 @@ class Tile extends React.Component {
           style={{...imgStyle, ...tileStyle}}
         />
         
-        {!this.state.open && <div style={{
-          marginTop: '-10px',
-          marginBottom: '0px',
-          fontSize: '13px'
-        }}><p><b>@apooch68</b> hi</p></div>}
+        {!this.state.open && 
+          <Caption />}
       </div>
     );
   }
