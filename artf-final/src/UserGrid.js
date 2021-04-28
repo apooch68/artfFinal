@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ProfileImage} from './ProfileImage';
-import BasicTextFields from './Questions';
 
 const UserGridStyled = styled.div`
     display: grid;

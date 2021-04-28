@@ -1,6 +1,9 @@
 import React from 'react';
 import { Profile } from './UserGrid';
 import Posts, { data } from './Posts';
+import {BasicTextFields} from './Questions';
+
+const questions = {}
 
 class ProfileContainer extends React.Component {
   constructor(props) {
@@ -16,6 +19,12 @@ class ProfileContainer extends React.Component {
     });
   }
 
+
+
+  getQuestion = () => {
+    return this.state.currentLevel in questions ? questions[this.state.currentLevel] : "How are you"
+  }
+
   render() {
     return (
       <>
@@ -24,8 +33,17 @@ class ProfileContainer extends React.Component {
         display:'flex',
         alignContent:'center',
         justifyContent:'center'
-      }}>{BasicTextFields()}</div>
+      }}>
+        <h2>{this.getQuestion()}</h2>
+        </div>
+        <div style={{
+        display:'flex',
+        alignContent:'center',
+        justifyContent:'center'
+      }}>
+        <BasicTextFields></BasicTextFields></div>
       <Posts level={this.state.currentLevel} data={data} />
+
       </>
   );
   }

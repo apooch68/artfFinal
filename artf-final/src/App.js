@@ -1,15 +1,20 @@
 import './App.css';
 import React, {Component} from 'react';
-import { Profile } from './UserGrid';
-import BasicTextFields from './Questions';
 
 import ProfileContainer from './ProfileContainer';
+import BasicTextFields from './Questions'
 
+// function getQuestion ()
 
 function App() {
   return (
+      <>
+      <ProfileContainer>
+
+      </ProfileContainer>
+
       
-      <ProfileContainer />
+      </>
   );
 }
 
