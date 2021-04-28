@@ -80,7 +80,7 @@ export const Profile = ({blurInfo}) => {
             <Photo><ProfileImage/></Photo>
             <Name>Bojack Horseman</Name>
             <LabelComponent><strong>406.7k</strong> followers </LabelComponent>
-            <DescriptionComponent>Bojack. As in Horseman. star of Horsin' Around and Secretariat. Follow me if you'd like to see how famous and well-adjusted I am.</DescriptionComponent>
+            <DescriptionComponent>I'm Bojack, star of Horsin' Around and Secretariat. Follow me if you'd like to see how famous and well-adjusted I am.</DescriptionComponent>
             
          </UserGridStyled>;
 }
