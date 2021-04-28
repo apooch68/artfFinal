@@ -3,7 +3,12 @@ import { Profile } from './UserGrid';
 import Posts, { data } from './Posts';
 import {BasicTextFields} from './Questions';
 
-const questions = {}
+const questions = [
+  {
+    question: "What is Alison's favorite color?",
+    answer: "purple"
+  }
+]
 
 class ProfileContainer extends React.Component {
   constructor(props) {
@@ -19,29 +24,37 @@ class ProfileContainer extends React.Component {
     });
   }
 
-
-
   getQuestion = () => {
-    return this.state.currentLevel in questions ? questions[this.state.currentLevel] : "How are you"
+    const level = this.state.currentLevel;
+    return level < questions.length + 1 ? questions[level - 1].question : 'You are now listed as Alison\'s close friend.';
+  }
+
+  getAnswer = () => {
+    const level = this.state.currentLevel;
+    return level < questions.length + 1 ? questions[level - 1].answer : null;
   }
 
   render() {
+    const finalLevel = this.state.currentLevel == questions.length + 1;
+
     return (
       <>
-      <Profile></Profile>
-      <div style={{
+      <Profile blurInfo={this.state.currentLevel == 1}></Profile>
+      {/* <div style={{
         display:'flex',
         alignContent:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        marginTop: '-50px'
       }}>
-        <h2>{this.getQuestion()}</h2>
-        </div>
+        <h3>{this.getQuestion()}</h3>
+        </div> */}
         <div style={{
+          marginTop: '-60px',
         display:'flex',
         alignContent:'center',
         justifyContent:'center'
       }}>
-        <BasicTextFields></BasicTextFields></div>
+        <BasicTextFields disabled={finalLevel} question={this.getQuestion()} answer={this.getAnswer()} onCorrectAnswer={this.onLevelUp} /></div>
       <Posts level={this.state.currentLevel} data={data} />
 
       </>

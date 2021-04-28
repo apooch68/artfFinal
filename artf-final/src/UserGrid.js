@@ -42,6 +42,15 @@ const Label = styled.div`
     }
 `;
 
+const LabelBlurred = styled.div`
+    grid-area: label;
+    color: transparent;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    @media (max-width: 990px){
+        padding-left: 25px;
+    }
+`;
+
 const Description = styled.div`
     grid-area: description;
     max-width: 400px;
@@ -51,13 +60,26 @@ const Description = styled.div`
     }
 `;
 
-export const Profile = () => {
+const DescriptionBlurred = styled.div`
+    grid-area: description;
+    max-width: 400px;
+    color: transparent;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    @media (max-width: 990px){
+        grid-column: 1/3;
+        padding-left: 25px;
+    }
+`;
+
+export const Profile = ({blurInfo}) => {
+    const DescriptionComponent = blurInfo ? DescriptionBlurred : Description;
+    const LabelComponent = blurInfo ? LabelBlurred : Label;
     return <UserGridStyled> 
             <Photo><ProfileImage/></Photo>
             <Name>GridGallary</Name>
-            <Label><strong>400</strong> followers </Label>
-            <Description>Pitchfork tilde lomo chillwave keytar, tofu chartreuse letterpress mumblecore. 
-                 mixtape palo santo kitsch sustainable food truck asymmetrical microdosing pok pok.</Description>
+            <LabelComponent><strong>400</strong> followers </LabelComponent>
+            <DescriptionComponent>Pitchfork tilde lomo chillwave keytar, tofu chartreuse letterpress mumblecore. 
+                 mixtape palo santo kitsch sustainable food truck asymmetrical microdosing pok pok.</DescriptionComponent>
             
          </UserGridStyled>;
 }

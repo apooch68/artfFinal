@@ -3,11 +3,14 @@ import TextField from '@material-ui/core/TextField';
 
 
 
-export const BasicTextFields = () => {
-  return(
+export const BasicTextFields = ({question, answer, onCorrectAnswer, disabled }) => {
+  const onChangeInput = () => {
+
+  }
+  return (
   <div>
       
-      <TextField id="standard-basic" label="Answer" style = {{width: 500}}/>
+      <TextField id="standard-basic" label={question} style = {{width: 500}} onChange={onChangeInput} disabled={disabled} />
     </div>
   );
 }
