@@ -2,7 +2,7 @@ import React from 'react';
 import { Profile } from './UserGrid';
 import Posts, { data } from './Posts';
 import {BasicTextFields} from './Questions';
-import { Widget, addResponseMessage } from 'react-chat-widget';
+import { Widget, addResponseMessage, toggleMsgLoader } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import './App.css';
 
@@ -58,9 +58,13 @@ class ProfileContainer extends React.Component {
   }
 
   handleNewUserMessage = (newMessage) => {
-    console.log(`New message incomig! ${newMessage}`);
+    console.log(`New message incoming! ${newMessage}`);
     if (this.state.numMessages === 0) {
-      addResponseMessage("wasssuppp");
+      toggleMsgLoader()
+      setTimeout(function(){ 
+        toggleMsgLoader();
+        addResponseMessage("Oh hey. I'm glad you reached out."); 
+    }, 2500);
     }
     this.setState({
       numMessages: this.state.numMessages + 1
@@ -82,9 +86,9 @@ class ProfileContainer extends React.Component {
         <BasicTextFields disabled={finalLevel} question={this.getQuestion()} answer={this.getAnswer()} onCorrectAnswer={this.onLevelUp} /></div>
       <Posts level={this.state.currentLevel} data={data} />
       {this.state.isChatting && <Widget
-          profileAvatar={"https://pbs.twimg.com/media/DjejAJyU8AIFvVz?format=jpg&name=small"}
+          profileAvatar={"https://cdn.vox-cdn.com/thumbor/v3OyeorG4Honr3vIWBrcZmy0XlA=/0x0:1920x1080/1200x800/filters:focal(863x301:1169x607)/cdn.vox-cdn.com/uploads/chorus_image/image/56596751/1351055_94035_zoomed_1.0.jpg"}
           title="Message Bojack"
-          subtitle="Ask him how he is!"
+          subtitle="Maybe ask him how he's doing..."
           handleNewUserMessage={this.handleNewUserMessage}
         />}
       </>

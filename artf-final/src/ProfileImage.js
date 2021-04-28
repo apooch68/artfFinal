@@ -20,7 +20,7 @@ export const ProfileImage = styled.div`
         } 
         
     `};
-    background: no-repeat center/170% url("https://pbs.twimg.com/media/DjejAJyU8AIFvVz?format=jpg&name=small");
+    background: no-repeat center/170% url("https://cdn.vox-cdn.com/thumbor/v3OyeorG4Honr3vIWBrcZmy0XlA=/0x0:1920x1080/1200x800/filters:focal(863x301:1169x607)/cdn.vox-cdn.com/uploads/chorus_image/image/56596751/1351055_94035_zoomed_1.0.jpg");
     border-radius: 100%;
 
 `;
