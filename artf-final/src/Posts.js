@@ -38,32 +38,33 @@ export const data = [{
   image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
 }, {
   id: 6,
-  name: "Flowers",
-  level: 2,
-  likes: 66,
-  caption: "could use a friend.... but feelin sexy 2day aha :P",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  name: "Self reflection",
+  level: 3,
+  likes: 65,
+  caption: "sometimes i look at myself and i don't know who i am anymore. anyway what's up guys?",
+  image: "https://www.americamagazine.org/sites/default/files/main_image/BoJack_Horseman_S06E01_12m1s17305f.jpg"
+}, 
+{
+  id: 8,
+  name: "Todd drunk",
+  level: 4,
+  likes: 3,
+  caption: "got pretty drunk today with todd. this should be a one time thing tho!",
+  image: "https://culturefly.co.uk/wp-content/uploads/2014/08/bojack-horseman-02-e1408981365594-759x500.png"
 }, {
   id: 7,
-  name: "Fire",
-  level: 3,
-  likes: 30,
-  caption: "feelin sexy today.... but could use a friend :/",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
-}, {
-  id: 8,
-  name: "Garden",
-  level: 3,
-  likes: 5,
-  caption: "could use a friend.... but feelin sexy 2day aha :P",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  name: "Drunk alone",
+  level: 4,
+  likes: 7,
+  caption: "it wasnt a one time thing. just went on a bender & don't remember anything since last tuesday",
+  image: "https://cdn.nybooks.com/wp-content/uploads/2020/07/thirlwell_1-082020.jpg"
 }, {
   id: 9,
-  name: "Bridge",
-  level: 4,
-  likes: 1025,
-  caption: "feelin sexy today.... but could use a friend :/",
-  image: "https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E"
+  name: "Sarah Lynn",
+  level: 5,
+  likes: 0,
+  caption: "I went too far this time. Life isn't the same.",
+  image: "https://miro.medium.com/max/1950/1*1YqPXr9D1gcjXktyIP6gsg.jpeg"
 }];
 
 class Posts extends React.Component {
@@ -186,7 +187,7 @@ class Tile extends React.Component {
         overflow: 'hidden',
         width: '18vw',
         //height: '21vw',
-        height: '23vw',
+        height: '26vw',
         marginTop: '0px'
       }}>
 

@@ -20,7 +20,7 @@ export const ProfileImage = styled.div`
         } 
         
     `};
-    background: no-repeat center/170% url(https://scontent.fnyc1-1.fna.fbcdn.net/v/t1.18169-9/27751941_1039422206199079_3433496688128842182_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CW4e1bNnKFcAX9cR1Ut&_nc_ht=scontent.fnyc1-1.fna&oh=bdc2d957e54fe89250c9d1d884dcc69a&oe=60AC3F3E);
+    background: no-repeat center/170% url(https://pyxis.nymag.com/v1/imgs/7b1/f7e/d9537726a7ff3eb18f3221a5a7b17b3058-11-bojack.rsquare.w330.jpg);
     border-radius: 100%;
 
 `;

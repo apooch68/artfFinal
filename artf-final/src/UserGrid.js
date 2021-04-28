@@ -76,10 +76,9 @@ export const Profile = ({blurInfo}) => {
     const LabelComponent = blurInfo ? LabelBlurred : Label;
     return <UserGridStyled> 
             <Photo><ProfileImage/></Photo>
-            <Name>GridGallary</Name>
-            <LabelComponent><strong>400</strong> followers </LabelComponent>
-            <DescriptionComponent>Pitchfork tilde lomo chillwave keytar, tofu chartreuse letterpress mumblecore. 
-                 mixtape palo santo kitsch sustainable food truck asymmetrical microdosing pok pok.</DescriptionComponent>
+            <Name>Bojack Horseman</Name>
+            <LabelComponent><strong>406.7k</strong> followers </LabelComponent>
+            <DescriptionComponent>Bojack. As in Horseman. star of Horsin's Around and Secretariat. Follow me if you'd like to see how famous and well-adjusted I am.</DescriptionComponent>
             
          </UserGridStyled>;
 }
