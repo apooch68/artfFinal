@@ -4,6 +4,7 @@ import Posts, { data } from './Posts';
 import {BasicTextFields} from './Questions';
 import { Widget, addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
+import './App.css';
 
 const questions = [
   {
@@ -72,14 +73,6 @@ class ProfileContainer extends React.Component {
     return (
       <>
       <Profile blurInfo={this.state.currentLevel == 1}></Profile>
-      {/* <div style={{
-        display:'flex',
-        alignContent:'center',
-        justifyContent:'center',
-        marginTop: '-50px'
-      }}>
-        <h3>{this.getQuestion()}</h3>
-        </div> */}
         <div style={{
           marginTop: '-40px',
         display:'flex',

@@ -1,5 +1,9 @@
 import React from 'react';
 import Caption from './CaptionComponent';
+import reflection from './pictures/reflection.jpg';
+import todd from './pictures/todd.jpg';
+import bender from './pictures/bender.jpg';
+import sarahlynn from './pictures/sarahlynn.jpg';
 
 export const data = [{
   id: 1,
@@ -42,29 +46,29 @@ export const data = [{
   level: 3,
   likes: 65,
   caption: "sometimes i look at myself and i don't know who i am anymore. anyway what's up guys?",
-  image: "https://www.americamagazine.org/sites/default/files/main_image/BoJack_Horseman_S06E01_12m1s17305f.jpg"
+  image: reflection
 }, 
 {
   id: 8,
   name: "Todd drunk",
   level: 4,
   likes: 3,
-  caption: "got pretty drunk today with todd. this should be a one time thing tho!",
-  image: "https://culturefly.co.uk/wp-content/uploads/2014/08/bojack-horseman-02-e1408981365594-759x500.png"
+  caption: "got black out drunk today with my housemate. hopefully this is a one time thing",
+  image: todd
 }, {
   id: 7,
   name: "Drunk alone",
   level: 4,
   likes: 7,
   caption: "it wasnt a one time thing. just went on a bender & don't remember anything since last tuesday",
-  image: "https://drive.google.com/file/d/1WJYHn58SBKEKlzefHCYBK__o2CD4CEyH/view?usp=sharing"
+  image: bender
 }, {
   id: 9,
   name: "Sarah Lynn",
   level: 5,
   likes: 0,
   caption: "I went too far this time. Life isn't the same.",
-  image: "https://miro.medium.com/max/1950/1*1YqPXr9D1gcjXktyIP6gsg.jpeg"
+  image: sarahlynn
 }];
 
 class Posts extends React.Component {
