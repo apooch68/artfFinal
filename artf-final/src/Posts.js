@@ -14,44 +14,44 @@ import ImageZoom from 'react-medium-image-zoom'
 
 export const data = [{
   id: 1,
-  likes: 500,
-  level: 1,
-  caption: "feelin sexy today.... but could use a friend :/",
+  likes: '1.1m',
+  level: 2,
+  caption: "Me and the co-stars just horsin' around! #TBT",
   name: "Island",
   image: horsinaroundlevel1
 }, {
   id: 2,
   name: "Forest",
-  level: 2,
-  likes: 288,
-  caption: "could use a friend.... but feelin sexy 2day aha :P",
+  level: 3,
+  likes: 910,
+  caption: "Just chillin' with my friend Diane... on my ROOF! #buddies #mansion #justcelebritythings",
   image: bojackanddianelevel2
 }, {
   id: 3,
   name: "Whale",
-  level: 1,
-  likes: 1,
-  caption: "feelin sexy today.... but could use a friend :/",
+  level: 2,
+  likes: '232.1k',
+  caption: "Read my new auto-biography to learn about my awesome life! XOXO",
   image: Onetrickponylevel1
 }, {
   id: 4,
   name: "Mountain",
-  level: 2,
-  likes: 3,
-  caption: "could use a friend.... but feelin sexy 2day aha :P",
+  level: 3,
+  likes: '1.2k',
+  caption: "Good times with the housemate! Just hanging out in my mansion :)",
   image: rockoperalevel2
 }, {
   id: 5,
   name: "Boat",
-  level: 1,
-  likes: 800,
-  caption: "feelin sexy today.... but could use a friend :/",
+  level: 2,
+  likes: "577.2k",
+  caption: "Come see my new movie coming out soon! Love you guys. I couldn't be more grateful!",
   image: secretariatlevel1
 }, {
   id: 6,
   name: "Self reflection",
-  level: 3,
-  likes: 65,
+  level: 4,
+  likes: 142,
   caption: "sometimes i look at myself and i don't know who i am anymore. anyway what's up guys?",
   image: reflection
 }, 
@@ -59,14 +59,14 @@ export const data = [{
   id: 8,
   name: "Todd drunk",
   level: 4,
-  likes: 3,
+  likes: 33,
   caption: "got black out drunk today with my housemate. hopefully this is a one time thing",
   image: todd
 }, {
   id: 7,
   name: "Drunk alone",
-  level: 4,
-  likes: 7,
+  level: 5,
+  likes: 23,
   caption: "it wasnt a one time thing. just went on a bender & don't remember anything since last tuesday",
   image: bender
 }, {
@@ -74,7 +74,7 @@ export const data = [{
   name: "Sarah Lynn",
   level: 5,
   likes: 0,
-  caption: "I went too far this time. Life isn't the same.",
+  caption: "I went too far this time. Life isn't the same. Could use someone to talk to...",
   image: sarahlynn
 }];
 
