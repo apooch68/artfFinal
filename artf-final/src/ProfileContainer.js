@@ -49,7 +49,7 @@ class ProfileContainer extends React.Component {
 
   getQuestion = () => {
     const level = this.state.currentLevel;
-    return level < questions.length + 1 ? questions[level - 1].question : 'You are now listed as Alison\'s close friend.';
+    return level < questions.length + 1 ? questions[level - 1].question : 'You are now listed as Bojack\'s close friend.';
   }
 
   getAnswer = () => {

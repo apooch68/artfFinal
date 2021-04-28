@@ -18,7 +18,7 @@ class Caption extends React.Component {
   }
 
   render() {
-    const { likes, caption, blur } = this.props;
+    const { likes, caption, blur, abbrv } = this.props;
     const { liked } = this.state;
     let captionStyle = {
       fontSize: '13px',
@@ -46,6 +46,11 @@ class Caption extends React.Component {
       onClick = () => {};
     }
 
+    let numLikes = likes;
+    if (liked && !abbrv) {
+      numLikes += 1;
+    }
+
     return (
       <div style={captionStyle}>
       <div style={{
@@ -55,12 +60,12 @@ class Caption extends React.Component {
       <img style={imageStyle}
         onClick={onClick}
         src={liked ? likedHeartUrl : likeHeartUrl} />
-        <p>{liked ? likes + 1 : likes} likes</p>
+        <p>{numLikes}{abbrv} likes</p>
       </div>
       <div style={{
         marginTop: '-23px'
       }}>
-      <p><b>apooch68</b> {caption}</p></div>
+      <p><b>BjackHman</b>  {caption}</p></div>
       </div>
     );
   }

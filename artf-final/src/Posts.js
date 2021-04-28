@@ -12,6 +12,8 @@ import bender from './pictures/bender.jpg';
 import sarahlynn from './pictures/sarahlynn.jpg';
 import ImageZoom from 'react-medium-image-zoom'
 
+// TODO: apooch, alison
+
 export const data = [{
   id: 9,
   name: "Sarah Lynn",
@@ -22,7 +24,8 @@ export const data = [{
 }, 
   {
   id: 1,
-  likes: '1.1m',
+  likes: 1.1,
+  abbrv: 'm',
   level: 2,
   caption: "Me and the co-stars just horsin' around! #TBT",
   name: "Island",
@@ -38,7 +41,7 @@ export const data = [{
   id: 7,
   name: "Drunk alone",
   level: 5,
-  likes: 23,
+  likes: 5,
   caption: "it wasnt a one time thing. just went on a bender & don't remember anything since last tuesday",
   image: bender
 },{
@@ -53,21 +56,23 @@ export const data = [{
   id: 5,
   name: "Boat",
   level: 2,
-  likes: "577.2k",
+  likes: 577.2,
+  abbrv: 'k',
   caption: "Come see my new movie coming out soon! Love you guys. I couldn't be more grateful!",
   image: secretariatlevel1
 }, {
   id: 6,
   name: "Self reflection",
   level: 4,
-  likes: 142,
+  likes: 99,
   caption: "sometimes i look at myself and i don't know who i am anymore. anyway what's up guys?",
   image: reflection
 }, {
   id: 4,
   name: "Mountain",
   level: 3,
-  likes: '1.2k',
+  likes: 1.2,
+  abbrv: 'k',
   caption: "Good times with the housemate! Just hanging out in my mansion :)",
   image: rockoperalevel2
 },
@@ -76,7 +81,8 @@ export const data = [{
   id: 3,
   name: "Whale",
   level: 2,
-  likes: '232.1k',
+  likes: 232.1,
+  abbrv: 'k',
   caption: "Read my new auto-biography to learn about my awesome life! XOXO",
   image: Onetrickponylevel1
 } ];
@@ -147,7 +153,7 @@ class Tile extends React.Component {
   }
 
   render() {
-    const { image, name, likes, caption, level } = this.props.data
+    const { image, name, likes, caption, level, abbrv } = this.props.data
     // Modify styles based on state values
     let tileStyle = {};
     const hidden = this.props.currentLevel < level;
@@ -224,7 +230,7 @@ class Tile extends React.Component {
         <div style={tileStyle}>{imageComponent}</div>
         
         {!this.state.open && 
-          <Caption likes={likes} caption={caption} blur={hidden} />}
+          <Caption likes={likes} abbrv={abbrv} caption={caption} blur={hidden} />}
       </div>
     );
   }
