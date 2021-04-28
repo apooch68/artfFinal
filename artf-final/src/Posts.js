@@ -194,7 +194,7 @@ class Tile extends React.Component {
         <div style={tileStyle}>{imageComponent}</div>
         
         {!this.state.open && 
-          <Caption likes={likes} caption={caption} />}
+          <Caption likes={likes} caption={caption} blur={hidden} />}
       </div>
     );
   }
