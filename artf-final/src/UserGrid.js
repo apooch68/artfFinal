@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ProfileImage} from './ProfileImage';
+import BasicTextFields from './Questions';
 
 const UserGridStyled = styled.div`
     display: grid;
@@ -58,5 +59,6 @@ export const Profile = () => {
             <Label><strong>400</strong> followers </Label>
             <Description>Pitchfork tilde lomo chillwave keytar, tofu chartreuse letterpress mumblecore. 
                  mixtape palo santo kitsch sustainable food truck asymmetrical microdosing pok pok.</Description>
+            
          </UserGridStyled>;
 }
