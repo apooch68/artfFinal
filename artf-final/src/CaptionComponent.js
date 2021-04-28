@@ -1,5 +1,4 @@
 import React from 'react';
-import Blur from 'react-blur'
 
 const likedHeartUrl = "https://www.nicepng.com/png/detail/778-7786050_download-instagram-like-icon-png.png";
 const likeHeartUrl = "https://lh3.googleusercontent.com/proxy/FGgkiGFBBT0mMJs3N6b_tr5nK2eDm8TR2DkOJWAYy3RLWO2uetZYGPr6Ckxa7Whcwli8GJhWt831lj9c5bpnsTlNnmrOa56FlHbPXba_qSvEAmXnGb-N5Ti3PnHBQxV2-7fB-6TAmfk";
