@@ -20,7 +20,7 @@ export const ProfileImage = styled.div`
         } 
         
     `};
-    background: no-repeat center/170% url(https://pyxis.nymag.com/v1/imgs/7b1/f7e/d9537726a7ff3eb18f3221a5a7b17b3058-11-bojack.rsquare.w330.jpg);
+    background: no-repeat center/170% url("https://pbs.twimg.com/media/DjejAJyU8AIFvVz?format=jpg&name=small");
     border-radius: 100%;
 
 `;
