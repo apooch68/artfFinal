@@ -1,5 +1,7 @@
 # README
-## Run the app
+## Link to Hoted Site
+https://circles-bojack.vercel.app/
+## Running the app locally
 1. Open your terminal
 2. `cd` into `artfFinal/artf-final`
 3. run `npm build`
